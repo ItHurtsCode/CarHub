@@ -216,9 +216,9 @@ return (
                     </Dialog.Panel> 
                 </Transition.Child>
                     </div>
-                    <PaymentCard isOpen={doOpen} closeModal={() => setIsOpen(false)}  car={car}> 
+                    <PaymentCard isOpen={doOpen} closeModal={() => setIsOpen(false)}  car={car}/> 
                     
-                    </PaymentCard>
+                    
                 </div>
             </Dialog>
         </Transition>
