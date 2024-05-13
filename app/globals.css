@@ -1,9 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* CSS variables to change the configuration of tick and circle */
+  --circle-width: 250px;
+  --circle-height: 250px;
+  --tick-width: calc(var(--circle-width)*0.56);
+  --tick-height: calc(var(--circle-height)*0.24);
+  --tick-thickness: calc(var(--tick-width)*0.1);
+  --background-color: #4285F4;    /* Royal Blue */
+  --circle-color: #fff;           /* White */
+  --tick-first-color: #0F9D58;    /* Shamrock Green */
+  --tick-second-color: #F4B400;   /* Selective Yellow */
+  --tick-third-color: #DB4437;    /* Cinnabar */
+  --tick-final-color: #4285F4;    /* Royal Blue */
+}
+.tick {
+  display: inline-block;
+  width: 56%;
+  height: 24%;
+  border-left: var(--tick-thickness) solid var(--tick-final-color);
+  border-bottom: var(--tick-thickness) solid var(--tick-final-color);
+  position: absolute;
+  margin: 0 auto;
+  left: calc(var(--circle-width)*0.15);
+  top: calc(var(--circle-height)/2 - var(--tick-height));
+  transform: rotate(-40deg);
+  transform-origin: calc(var(--tick-width)*0.57) calc(var(--tick-height)/2);
+  animation: tick-animation 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+@keyframes tick-animation {
+  0% {
+      height: 0;
+      width: 0;
+      border-left-color: var(--tick-first-color);
+  }
+  50% {
+      width: 0;
+      height: var(--tick-height);
+      border-left-color: var(--tick-second-color);
+      border-bottom-color: var(--tick-first-color);
+  }
+  75% {
+      border-left-color: var(--tick-third-color);
+      border-bottom-color: var(--tick-second-color);
+  }
+  90% {
+      border-bottom-color: var(--tick-third-color);
+  }
+  100% {
+      width: var(--tick-width);
+      border-color: var(--tick-final-color);
+  }
+}
+
+.circle {
+  background-color: var(--circle-color);
+  width: var(--circle-width);
+  height: var(--circle-height);
+  left: calc(50% - var(--circle-width) / 2);
+  top: calc(50% - var(--circle-height) / 2);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--tick-thickness) solid var(--circle-border-color);
+}
+
+
+.checkmark-circle {
+	fill: none;
+	stroke-dasharray: 200px;
+	stroke-dashoffset: 200px;
+	stroke-width: 1px;
+	stroke-miterlimit: 10px;
+}
+.checkmark-check {
+	stroke: #fff;
+	stroke-dasharray: 100px;
+	stroke-dashoffset: 100px;
+	transform-origin: 50% 50%;
+}
 
 * {
   margin: 0;
@@ -56,14 +144,8 @@
   @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
 }
 
-@layer utilities{
-  .bg-hero-bg {
-    background-image: url('/hero-bg.png');
-  }
-}
-
 .hero__image-overlay {
-  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
 
 .home__text-container {

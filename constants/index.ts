@@ -1,5 +1,6 @@
 import { CarProps } from "@/types";
-import { CarDetailsProps } from "@/components/CarDetails";
+
+
 export const manufacturers = [
   "Acura",
   "Alfa Romeo",

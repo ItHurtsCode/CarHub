@@ -3,12 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 
+import { calculateCarRent } from "@/utils";
 import { CarProps } from "@/types";
 import CustomButton from "./CustomButton";
 import CarDetails from "./CarDetails";
-import { calculateCarRent} from "@/utils";
-
-
+import UserInfo from "./UserInfo";
 interface CarCardProps {
   car: CarProps;
 }
@@ -21,7 +20,7 @@ const CarCard = ({ car }: CarCardProps) => {
   const carRent = calculateCarRent(city_mpg, year);
 
   return (
-    <div className="car-card text-black-100 bg-primary-blue-100 hover:bg-white group">
+    <div className="car-card group">
       <div className="car-card__content">
         <h2 className="car-card__content-title">
           {make} {model}
@@ -34,7 +33,7 @@ const CarCard = ({ car }: CarCardProps) => {
         <span className='self-end text-[14px] leading-[17px] font-medium'>/день</span>
       </p>
 
-      <div className='relative w-full h-20 my-3 object-contain'>
+      <div className='relative w-full h-10 my-3 object-contain'>
         
       </div>
 
@@ -52,13 +51,13 @@ const CarCard = ({ car }: CarCardProps) => {
           </div>
           <div className="car-card__icon">
             <Image src="/gas.svg" width={20} height={20} alt="seat" />
-            <p className="car-card__icon-text">{(city_mpg / 2.3).toFixed(0)} КМ/Л</p>
+            <p className="car-card__icon-text">{city_mpg} KM</p>
           </div>
         </div>
 
-        <div className="car-card__btn-container bg-primary-blue-500">
+        <div className="car-card__btn-container">
           <CustomButton
-            title='Полная информация'
+            title='Взять на прокат'
             containerStyles='w-full py-[16px] rounded-full bg-primary-blue'
             textStyles='text-white text-[14px] leading-[17px] font-bold'
             rightIcon='/right-arrow.svg'
@@ -67,7 +66,8 @@ const CarCard = ({ car }: CarCardProps) => {
         </div>
       </div>
 
-      <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
+      <UserInfo isOpen={isOpen} closeModal={() => setIsOpen(false)}  car={car}/> 
+
     </div>
   );
 };

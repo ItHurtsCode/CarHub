@@ -3,17 +3,14 @@
   \*************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
-
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-
 
 *,
 ::before,
@@ -24,12 +21,10 @@
   border-color: #e5e7eb; /* 2 */
 }
 
-
 ::before,
 ::after {
   --tw-content: '';
 }
-
 
 /*
 1. Use a consistent sensible line-height in all browsers.
@@ -39,7 +34,6 @@
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
 */
-
 
 html {
   line-height: 1.5; /* 1 */
@@ -52,18 +46,15 @@ html {
   font-variation-settings: normal; /* 6 */
 }
 
-
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
-
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
-
 
 /*
 1. Add the correct height in Firefox.
@@ -71,29 +62,24 @@ body {
 3. Ensure horizontal rules are visible by default.
 */
 
-
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
 }
 
-
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
-
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
 
-
 /*
 Remove the default font size and weight for headings.
 */
-
 
 h1,
 h2,
@@ -105,34 +91,28 @@ h6 {
   font-weight: inherit;
 }
 
-
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
-
 
 a {
   color: inherit;
   text-decoration: inherit;
 }
 
-
 /*
 Add the correct font weight in Edge and Safari.
 */
-
 
 b,
 strong {
   font-weight: bolder;
 }
 
-
 /*
 1. Use the user's configured `mono` font family by default.
 2. Correct the odd `em` font sizing in all browsers.
 */
-
 
 code,
 kbd,
@@ -142,21 +122,17 @@ pre {
   font-size: 1em; /* 2 */
 }
 
-
 /*
 Add the correct font size in all browsers.
 */
-
 
 small {
   font-size: 80%;
 }
 
-
 /*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
-
 
 sub,
 sup {
@@ -166,16 +142,13 @@ sup {
   vertical-align: baseline;
 }
 
-
 sub {
   bottom: -0.25em;
 }
 
-
 sup {
   top: -0.5em;
 }
-
 
 /*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
@@ -183,20 +156,17 @@ sup {
 3. Remove gaps between table borders by default.
 */
 
-
 table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
 }
 
-
 /*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
-
 
 button,
 input,
@@ -212,23 +182,19 @@ textarea {
   padding: 0; /* 3 */
 }
 
-
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
-
 
 button,
 select {
   text-transform: none;
 }
 
-
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
-
 
 button,
 [type='button'],
@@ -239,96 +205,78 @@ button,
   background-image: none; /* 2 */
 }
 
-
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
-
 
 :-moz-focusring {
   outline: auto;
 }
 
-
 /*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
-
 
 :-moz-ui-invalid {
   box-shadow: none;
 }
 
-
 /*
 Add the correct vertical alignment in Chrome and Firefox.
 */
-
 
 progress {
   vertical-align: baseline;
 }
 
-
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
-
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
 
-
 /*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-
 
 [type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
-
 /*
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
-
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to `inherit` in Safari.
 */
 
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
-
 /*
 Add the correct display in Chrome and Safari.
 */
-
 
 summary {
   display: list-item;
 }
 
-
 /*
 Removes the default spacing and border for appropriate elements.
 */
-
 
 blockquote,
 dl,
@@ -346,17 +294,14 @@ pre {
   margin: 0;
 }
 
-
 fieldset {
   margin: 0;
   padding: 0;
 }
 
-
 legend {
   padding: 0;
 }
-
 
 ol,
 ul,
@@ -366,28 +311,23 @@ menu {
   padding: 0;
 }
 
-
 /*
 Prevent resizing textareas horizontally by default.
 */
 
-
 textarea {
   resize: vertical;
 }
-
 
 /*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
-
 
 input::placeholder,
 textarea::placeholder {
@@ -395,34 +335,28 @@ textarea::placeholder {
   color: #9ca3af; /* 2 */
 }
 
-
 /*
 Set the default cursor for buttons.
 */
-
 
 button,
 [role="button"] {
   cursor: pointer;
 }
 
-
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
 
-
 :disabled {
   cursor: default;
 }
-
 
 /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
-
 
 img,
 svg,
@@ -436,11 +370,9 @@ object {
   vertical-align: middle; /* 2 */
 }
 
-
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
-
 
 img,
 video {
@@ -448,14 +380,11 @@ video {
   height: auto;
 }
 
-
 /* Make elements with the HTML hidden attribute stay hidden by default */
-
 
 [hidden] {
   display: none;
 }
-
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -506,7 +435,6 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-
 
 ::backdrop{
   --tw-border-spacing-x: 0;
@@ -605,6 +533,12 @@ video {
 .ml-4{
   margin-left: 1rem;
 }
+.ml-8{
+  margin-left: 2rem;
+}
+.mr-2{
+  margin-right: 0.5rem;
+}
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -616,9 +550,6 @@ video {
 }
 .mt-2{
   margin-top: 0.5rem;
-}
-.mt-3{
-  margin-top: 0.75rem;
 }
 .mt-5{
   margin-top: 1.25rem;
@@ -632,11 +563,17 @@ video {
 .flex{
   display: flex;
 }
-.h-20{
-  height: 5rem;
+.grid{
+  display: grid;
+}
+.h-10{
+  height: 2.5rem;
 }
 .h-6{
   height: 1.5rem;
+}
+.h-8{
+  height: 2rem;
 }
 .h-\[20px\]{
   height: 20px;
@@ -649,6 +586,12 @@ video {
 }
 .min-h-full{
   min-height: 100%;
+}
+.w-32{
+  width: 8rem;
+}
+.w-52{
+  width: 13rem;
 }
 .w-6{
   width: 1.5rem;
@@ -685,6 +628,21 @@ video {
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@keyframes slidein{
+
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slidein300{
+  animation: slidein 1s ease 300ms;
+}
 .cursor-default{
   cursor: default;
 }
@@ -692,6 +650,9 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+.grid-rows-1{
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 .flex-col{
   flex-direction: column;
@@ -716,9 +677,6 @@ video {
 }
 .gap-2{
   gap: 0.5rem;
-}
-.gap-4{
-  gap: 1rem;
 }
 .gap-5{
   gap: 1.25rem;
@@ -755,8 +713,15 @@ video {
 .rounded-md{
   border-radius: 0.375rem;
 }
+.border{
+  border-width: 1px;
+}
 .border-t{
   border-top-width: 1px;
+}
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-gray-100{
   --tw-border-opacity: 1;
@@ -770,6 +735,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
+.bg-light-white{
+  background-color: rgba(59,60,152,0.03);
+}
+.bg-primary-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 89 255 / var(--tw-bg-opacity));
+}
+.bg-primary-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 248 255 / var(--tw-bg-opacity));
+}
 .bg-transparent{
   background-color: transparent;
 }
@@ -779,6 +755,9 @@ video {
 }
 .bg-opacity-25{
   --tw-bg-opacity: 0.25;
+}
+.bg-hero-bg{
+  background-image: url('/hero-bg.png');
 }
 .object-contain{
   -o-object-fit: contain;
@@ -821,20 +800,30 @@ video {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.py-\[24px\]{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+.pl-2{
+  padding-left: 0.5rem;
+}
 .pl-3{
   padding-left: 0.75rem;
+}
+.pt-2{
+  padding-top: 0.5rem;
 }
 .pt-36{
   padding-top: 9rem;
 }
-.text-left{
-  text-align: left;
-}
 .text-center{
   text-align: center;
-}
-.text-right{
-  text-align: right;
 }
 .text-4xl{
   font-size: 2.25rem;
@@ -849,6 +838,14 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xl{
   font-size: 1.25rem;
@@ -869,6 +866,9 @@ video {
 .font-semibold{
   font-weight: 600;
 }
+.font-thin{
+  font-weight: 100;
+}
 .capitalize{
   text-transform: capitalize;
 }
@@ -882,6 +882,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.text-black-100{
+  --tw-text-opacity: 1;
+  color: rgb(43 44 53 / var(--tw-text-opacity));
+}
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -893,6 +897,10 @@ video {
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.text-grey{
+  --tw-text-opacity: 1;
+  color: rgb(116 122 136 / var(--tw-text-opacity));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -957,6 +965,95 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+:root {
+  /* CSS variables to change the configuration of tick and circle */
+  --circle-width: 250px;
+  --circle-height: 250px;
+  --tick-width: calc(var(--circle-width)*0.56);
+  --tick-height: calc(var(--circle-height)*0.24);
+  --tick-thickness: calc(var(--tick-width)*0.1);
+  --background-color: #4285F4;    /* Royal Blue */
+  --circle-color: #fff;           /* White */
+  --tick-first-color: #0F9D58;    /* Shamrock Green */
+  --tick-second-color: #F4B400;   /* Selective Yellow */
+  --tick-third-color: #DB4437;    /* Cinnabar */
+  --tick-final-color: #4285F4;    /* Royal Blue */
+}
+.tick {
+  display: inline-block;
+  width: 56%;
+  height: 24%;
+  border-left: var(--tick-thickness) solid var(--tick-final-color);
+  border-bottom: var(--tick-thickness) solid var(--tick-final-color);
+  position: absolute;
+  margin: 0 auto;
+  left: calc(var(--circle-width)*0.15);
+  top: calc(var(--circle-height)/2 - var(--tick-height));
+  transform: rotate(-40deg);
+  transform-origin: calc(var(--tick-width)*0.57) calc(var(--tick-height)/2);
+  animation: tick-animation 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+@keyframes tick-animation {
+  0% {
+      height: 0;
+      width: 0;
+      border-left-color: var(--tick-first-color);
+  }
+  50% {
+      width: 0;
+      height: var(--tick-height);
+      border-left-color: var(--tick-second-color);
+      border-bottom-color: var(--tick-first-color);
+  }
+  75% {
+      border-left-color: var(--tick-third-color);
+      border-bottom-color: var(--tick-second-color);
+  }
+  90% {
+      border-bottom-color: var(--tick-third-color);
+  }
+  100% {
+      width: var(--tick-width);
+      border-color: var(--tick-final-color);
+  }
+}
+
+.circle {
+  background-color: var(--circle-color);
+  width: var(--circle-width);
+  height: var(--circle-height);
+  left: calc(50% - var(--circle-width) / 2);
+  top: calc(50% - var(--circle-height) / 2);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--tick-thickness) solid var(--circle-border-color);
+}
+
+
+.checkmark-circle {
+	fill: none;
+	stroke-dasharray: 200px;
+	stroke-dashoffset: 200px;
+	stroke-width: 1px;
+	stroke-miterlimit: 10px;
+}
+.checkmark-check {
+	stroke: #fff;
+	stroke-dasharray: 100px;
+	stroke-dashoffset: 100px;
+	transform-origin: 50% 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -976,7 +1073,6 @@ video {
 }
 
 @media (min-width: 640px){
-
 
   .padding-x{
     padding-left: 4rem;
@@ -1028,7 +1124,6 @@ video {
 
 @media (min-width: 1280px){
 
-
   .hero{
     flex-direction: row;
   }
@@ -1041,14 +1136,12 @@ video {
 
 @media (min-width: 640px){
 
-
   .hero__title{
     font-size: 64px;
   }
 }
 
 @media (min-width: 1536px){
-
 
   .hero__title{
     font-size: 72px;
@@ -1070,7 +1163,6 @@ video {
 
 @media (min-width: 1280px){
 
-
   .hero__image-container{
     height: 100vh;
     flex: 1.5;
@@ -1086,7 +1178,6 @@ video {
 
 @media (min-width: 1280px){
 
-
   .hero__image{
     height: 100%;
     width: 100%;
@@ -1101,11 +1192,9 @@ video {
   width: 100%;
   overflow: hidden;
   background-repeat: round;
-    background-image: url('/hero-bg.png');
 }
 
 @media (min-width: 1280px){
-
 
   .hero__image-overlay{
     top: -6rem;
@@ -1150,7 +1239,6 @@ video {
 
 @media (min-width: 768px){
 
-
   .home__cars-wrapper{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1158,14 +1246,12 @@ video {
 
 @media (min-width: 1280px){
 
-
   .home__cars-wrapper{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1536px){
-
 
   .home__cars-wrapper{
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1345,7 +1431,6 @@ video {
 
 @media (min-width: 640px){
 
-
   .custom-filter__btn{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1382,7 +1467,6 @@ video {
 
 @media (min-width: 640px){
 
-
   .custom-filter__options{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1411,14 +1495,12 @@ video {
 
 @media not all and (min-width: 768px){
 
-
   .footer__links-container{
     flex-direction: column;
   }
 }
 
 @media (min-width: 640px){
-
 
   .footer__links-container{
     padding-left: 4rem;
@@ -1444,14 +1526,12 @@ video {
 
 @media not all and (min-width: 768px){
 
-
   .footer__links{
     margin-top: 2.5rem;
   }
 }
 
 @media (min-width: 768px){
-
 
   .footer__links{
     justify-content: flex-end;
@@ -1484,7 +1564,6 @@ video {
 
 @media (min-width: 640px){
 
-
   .footer__copyrights{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1500,14 +1579,12 @@ video {
 
 @media not all and (min-width: 640px){
 
-
   .footer__copyrights-link{
     margin-top: 1rem;
   }
 }
 
 @media (min-width: 640px){
-
 
   .footer__copyrights-link{
     justify-content: flex-end;
@@ -1525,7 +1602,6 @@ video {
 
 @media not all and (min-width: 640px){
 
-
   .searchbar{
     flex-direction: column;
     gap: 1rem;
@@ -1541,7 +1617,6 @@ video {
 }
 
 @media not all and (min-width: 640px){
-
 
   .searchbar__item{
     width: 100%;
@@ -1564,7 +1639,6 @@ video {
 
 @media not all and (min-width: 640px){
 
-
   .searchbar__input{
     border-radius: 9999px;
   }
@@ -1578,7 +1652,6 @@ video {
 }
 
 @media not all and (min-width: 640px){
-
 
   .search-manufacturer{
     width: 100%;
@@ -1600,7 +1673,6 @@ video {
 }
 
 @media not all and (min-width: 640px){
-
 
   .search-manufacturer__input{
     border-radius: 9999px;
@@ -1637,7 +1709,6 @@ video {
 
 @media (min-width: 640px){
 
-
   .search-manufacturer__options{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1671,14 +1742,12 @@ video {
 
 @media not all and (min-width: 768px){
 
-
   .max-md\:flex-col{
     flex-direction: column;
   }
 }
 
 @media not all and (min-width: 640px){
-
 
   .max-sm\:hidden{
     display: none;
@@ -1687,17 +1756,14 @@ video {
 
 @media (min-width: 640px){
 
-
   .sm\:hidden{
     display: none;
   }
-
 
   .sm\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
   }
-
 
   .sm\:text-sm{
     font-size: 0.875rem;

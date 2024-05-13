@@ -27,6 +27,12 @@ export interface HomeProps {
   searchParams: FilterProps;
 }
 
+export interface DefaultCardProps {
+  isOpen: boolean;
+  closeModal:() => void;
+  car: CarProps;
+}
+
 export interface CarCardProps {
   model: string;
   make: string;

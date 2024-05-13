@@ -9,7 +9,7 @@ export default async function Home({ searchParams }: HomeProps) {
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2022,
     fuel: searchParams.fuel || "",
-    limit: searchParams.limit || 12,
+    limit: searchParams.limit || 1,
     model: searchParams.model || "",
   });
 
